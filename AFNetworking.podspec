@@ -58,11 +58,11 @@ EOS
   end
 
   s.subspec 'NSURLSession1' do |ss|
-    ss.dependency 'AFNetworking/Serialization'
-    ss.ios.dependency 'AFNetworking/Reachability'
-    ss.osx.dependency 'AFNetworking/Reachability'
-    ss.tvos.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'AFNetworking/Serialization1'
+    ss.ios.dependency 'AFNetworking/Reachability1'
+    ss.osx.dependency 'AFNetworking/Reachability1'
+    ss.tvos.dependency 'AFNetworking/Reachability1'
+    ss.dependency 'AFNetworking/Security1'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h', 'AFNetworking/AFCompatibilityMacros.h'
@@ -71,7 +71,7 @@ EOS
   s.subspec 'UIKit1' do |ss|
     ss.ios.deployment_target = '8.0'
     ss.tvos.deployment_target = '9.0'
-    ss.dependency 'AFNetworking/NSURLSession'
+    ss.dependency 'AFNetworking/NSURLSession1'
 
     ss.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.source_files = 'UIKit+AFNetworking'
