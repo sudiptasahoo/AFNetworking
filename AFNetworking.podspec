@@ -32,7 +32,7 @@ EOS
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
   
-  s.subspec 'Serialization' do |ss|
+  s.subspec 'Serialization1' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
     ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
     ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
@@ -40,13 +40,13 @@ EOS
     ss.osx.frameworks = 'CoreServices'
   end
 
-  s.subspec 'Security' do |ss|
+  s.subspec 'Security1' do |ss|
     ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
     ss.public_header_files = 'AFNetworking/AFSecurityPolicy.h'
     ss.frameworks = 'Security'
   end
 
-  s.subspec 'Reachability' do |ss|
+  s.subspec 'Reachability1' do |ss|
     ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.9'
     ss.tvos.deployment_target = '9.0'
@@ -57,7 +57,7 @@ EOS
     ss.frameworks = 'SystemConfiguration'
   end
 
-  s.subspec 'NSURLSession' do |ss|
+  s.subspec 'NSURLSession1' do |ss|
     ss.dependency 'AFNetworking/Serialization'
     ss.ios.dependency 'AFNetworking/Reachability'
     ss.osx.dependency 'AFNetworking/Reachability'
@@ -68,7 +68,7 @@ EOS
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h', 'AFNetworking/AFCompatibilityMacros.h'
   end
 
-  s.subspec 'UIKit' do |ss|
+  s.subspec 'UIKit1' do |ss|
     ss.ios.deployment_target = '8.0'
     ss.tvos.deployment_target = '9.0'
     ss.dependency 'AFNetworking/NSURLSession'
